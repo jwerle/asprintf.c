@@ -45,14 +45,14 @@ vasprintf (char **str, const char *fmt, va_list args) {
   // toss args
   va_end(tmpa);
 
-  // strurn -1 to be compliant if
+  // return -1 to be compliant if
   // size is less than 0
   if (size < 0) { return -1; }
 
   // alloc with size plus 1 for `\0'
   *str = (char *) malloc(size + 1);
 
-  // strurn -1 to be compliant
+  // return -1 to be compliant
   // if pointer is `NULL'
   if (NULL == *str) { return -1; }
 
