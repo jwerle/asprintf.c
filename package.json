@@ -1,5 +1,5 @@
 {
-  "name": "asprintf.c",
+  "name": "asprintf",
   "version": "0.0.1",
   "repo": "littlstar/asprintf.c",
   "description": "asprintf() implementation",
