@@ -1,6 +1,6 @@
 
 SRC = asprintf.c
-CFLAGS += -std=c99 -Wall
+CFLAGS += -std=c99 -Wall -Wextra
 PREFIX ?= /usr/local
 
 all: clean test
