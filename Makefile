@@ -12,7 +12,4 @@ test:
 	$(CC) test.c $(SRC) $(CFLAGS) -o test
 	./test
 
-install: $(BIN)
-	install $(BIN) $(PREFIX)/bin
-
 .PHONY: test
