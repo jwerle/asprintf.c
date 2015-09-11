@@ -18,6 +18,10 @@ int
 main (void) {
   test(16, "this is a %s", "string");
   test(9, "%d + %d = %d", 1, 1, 2);
-  test(56, "bradley likes %s, %s, %s, and %s", "kinkajous", "bananas", "monkeys", "the beach");
+  test(
+       56
+     , "bradley likes %s, %s, %s, and %s"
+     , "kinkajous", "bananas", "monkeys", "the beach"
+  );
   return 0;
 }
