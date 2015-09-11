@@ -14,6 +14,7 @@ main (void) {
 
     assert(str);
     assert(16 == size);
+    free(str);
   }
 
   {
@@ -23,6 +24,7 @@ main (void) {
 
     assert(str);
     assert(9 == size);
+    free(str);
   }
 
   {
@@ -33,6 +35,7 @@ main (void) {
 
     assert(str);
     assert(56 == size);
+    free(str);
   }
 
   return 0;
