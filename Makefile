@@ -1,15 +1,13 @@
 
-SRC = asprintf.c
 CFLAGS += -std=c99 -Wall -Wextra
-PREFIX ?= /usr/local
 
-all: clean test
-
-clean:
-	rm -f test
-
-test:
-	$(CC) test.c $(SRC) $(CFLAGS) -o test
+default: clean test
 	./test
 
-.PHONY: test
+clean:
+	rm -f test test.o asprintf.o
+
+test: test.o asprintf.o
+	$(CC) $^ $(CFLAGS) -o test
+
+.PHONY: default clean
