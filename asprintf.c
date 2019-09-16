@@ -40,7 +40,7 @@ vasprintf (char **str, const char *fmt, va_list args) {
 
   // apply variadic arguments to
   // sprintf with format to get size
-  size = vsnprintf(NULL, size, fmt, tmpa);
+  size = vsnprintf(NULL, 0, fmt, tmpa);
 
   // toss args
   va_end(tmpa);
