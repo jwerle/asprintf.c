@@ -34,6 +34,6 @@ printf("%d\n", size); // 16
 
 ```
 
-## license
+## License
 
 MIT
