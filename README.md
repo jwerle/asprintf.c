@@ -3,13 +3,13 @@ asprintf.c
 
 asprintf() implementation
 
-## install
+## Install
 
 ```sh
 $ clib install littlstar/asprintf.c
 ```
 
-## usage
+## Usage
 
 ```c
 #include <asprintf.h>
@@ -21,7 +21,7 @@ or
 #include <asprintf/asprintf.h>
 ```
 
-## example
+## Example
 
 ```c
 
@@ -34,6 +34,6 @@ printf("%d\n", size); // 16
 
 ```
 
-## license
+## License
 
 MIT
